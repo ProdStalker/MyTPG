@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="menu_lines">Lines</string>
+    <string name="menu_stops">Stops</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="menu_proximity">Proximity</string>
+    <string name="share_using">Share</string>
+    <string name="menu_favorites_stops">Favorites stops</string>
+    <string name="group_title_my_menu">My menu</string>
+    <string name="group_title_general">General</string>
+    <string name="group_title_communicate">Communicate</string>
+    <string name="menu_disruptions">Disruptions</string>
+    <string name="menu_departures_alarms">Departures\' alarms</string>
+    <string name="menu_tickets">Tickets SMS</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_directions">Route</string>
+    <string name="hint_search_stop">Search a stop</string>
+    <string name="loading">Loading...</string>
+    <string name="label_stops">Stops</string>
+    <string name="label_proximity">Proximity</string>
+    <string name="label_recents_stops">Recent stops</string>
+
+    <plurals name="view_disruption">
+        <item quantity="one">View the disruption</item>
+        <item quantity="other">View the disruptions</item>
+    </plurals>
+
+    <string name="favorite_stop_added">The stop has been added to the favorites</string>
+    <string name="favorite_stop_removed">The stop has been removed from the favorites</string>
+    <string name="favorite_stop_error_added">The stop hasn\'t been added to the favorites</string>
+    <string name="favorite_stop_error_removed">The stop hasn\'t been removed from the favorites</string>
+    <string name="favorite_stops_updated">Favorites stops updated</string>
+
+    <string name="day_ticket">Day pass</string>
+    <string name="day_ticket_description">Valid upon receipt until the end of the service. \n All GENEVA zone 10, 2nd CL.</string>
+    <string name="day_9h_ticket">Day pass 9h</string>
+    <string name="day_9h_ticket_description">Valid from 9 AM until the end of the service, ALL GENEVA zone 10, 2nd CL.</string>
+    <string name="reduced_price">Reduced price (&#189;)</string>
+    <string name="full_price">Full price</string>
+    <string name="all_geneva">All Geneva</string>
+    <string name="all_geneva_description">This ticket allows you to move freely, upon receipt, for 60 minutes in zone 10.</string>
+    <string name="load_tickets_in_progress">Chargement des tickets en cours</string>
+
+    <string name="ticket_date_validate">Valid until to %1$s</string>
+
+    <string name="please_activate_location">Please activate the location.</string>
+
+    <string name="permlab_proximityLoc">Proximity stops</string>
+    <string name="permdesc_proximityLoc">This allow permits to see which stops are near to you.</string>
+    <string name="permlab_externalStorage">Images cration</string>
+    <string name="permdesc_externalStorage">This allow permits to share informations with an image.</string>
+    <string name="permlab_receiveSMS">SMS receive</string>
+    <string name="permdesc_receiveSMS">This allow permits to receive a notification about your SMS ticket.</string>
+
+    <string name="distance">~%1$dm</string>
+    <string name="prepare_sms">Prepare SMS</string>
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+
+    <string name="getting_data_stops_online">Getting stops\' data from online</string>
+    <string name="getting_lines_data_online">Getting stops\' data from online</string>
+    <string name="lines_saving_offline">Lines are saving for offline mode</string>
+    <string name="stops_saving_offline">Stops are saving for offline mode</string>
+    <string name="configure_stops_connections">Configure stops\' connections</string>
+    <string name="connections_saving_offline">Connections are saving for offline mode</string>
+    <string name="info_update_departure_alarm">The informations will be automatically updated &lt;b>each minute&lt;/b> from &lt;b>%1$s&lt;/b></string>
+    <string name="bus_comes_before">The bus will arrive &lt;b>before&lt;/b> the scheduled time.</string>
+    <string name="bus_comes_after">The bus will arrive &lt;b>with delay.&lt;/b></string>
+    <string name="bus_at_stop_name">It is currently at the stop &lt;b>%1$s&lt;/b></string>
+    <string name="bus_comes_correct">The bus will arrive at the sheduled time.</string>
+    <string name="unable_loading">Unable to load</string>
+    <string name="address_found">Address found</string>
+    <string name="address_not_found">Address not found</string>
+    <string name="searching">Searching...</string>
+    <string name="loading_steps">Loading... %1$d/%2$d</string>
+    <string name="action_day_departures">Day\'s departures</string>
+    <string name="action_hh_mm">HH:MM</string>
+    <string name="error_loading">Loading error</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="none_description">None description</string>
+    <string name="action_filter">Filter</string>
+
+    <string name="estimate_arrival">Estimated arrival in %1$s (%2$s)</string>
+    <string name="menu_thermometer">Thermometer</string>
+
+    <string name="you_will_receive_bus_will_arrive_notif">You will receive a notification %1$d minutes before your bus will arrive.</string>
+    <string name="need_minimum_minutes">It needs minimum %1$d minutes</string>
+    <string name="error_creation_alarm">Error during the creation of the alarm</string>
+    <string name="alarm_deleted">The alarm has been deleted</string>
+
+    <string name="ticket_expiration">Ticket expiration</string>
+    <string name="your_ticket_expires_in_minutes">Your ticket expires in %1$d minutes</string>
+    <string name="your_bus_will_arrive">The bus %1$s arrives at the stop %2$s in destination of %3$s in %4$d minutes.</string>
+    <string name="bus_arrival">Bus arrival</string>
+    <string name="bus_aldready_passed">The bus is already passed.</string>
+    <string name="tick">&#10003;</string>
+    <string name="action_share">Share</string>
+    <string name="next_departures_stop">Next departures at the stop %1$s</string>
+    <string name="next_day_departures_stop">Next departures of the day at the stop %1$s</string>
+    <string name="which_share_format">In which format do you want to share ?</string>
+    <string name="text">Text</string>
+    <string name="link">Link</string>
+    <string name="text_message">Text message</string>
+    <string name="image">Image</string>
+    <string name="no_app_available">No app available</string>
+    <string name="action_view">View</string>
+    <string name="action_zone_10">Zone 10</string>
+    <string name="menu_line_destinations">Line\'s destinations</string>
+    <string name="none_lines">No lines</string>
+    <string name="menu_line_stops">Line\'s stops</string>
+    <string name="none_stops">No stops</string>
+    <string name="menu_day_departures">Day\'s departures</string>
+    <string name="offline_schedules">Offline schedules</string>
+    <string name="departures_not_saved">Departures not saved</string>
+    <string name="departures_saved">Departures saved</string>
+    <string name="action_save">Save</string>
+    <string name="none_departures">No departures</string>
+    <string name="action_delete">Delete</string>
+    <string name="menu_offline_day_departures">Offline departures</string>
+    <string name="all_departures_deleted">All departures were deleted</string>
+    <string name="all_departures_not_deleted">All departures were not deleted</string>
+    <string name="no_departures_deleted">No departure were deleted</string>
+    <plurals name="number_departures_deleted">
+        <item quantity="one">One departure was deleted</item>
+        <item quantity="other">%1$d/%2$d departures were deleted</item>
+    </plurals>
+
+    <plurals name="selected_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <string name="arrival">Arrival</string>
+    <string name="departure">Departure</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="research">Research</string>
+    <string name="please_complete_all_fields">Please, complete all the fields.</string>
+    <string name="incomplete_fields">Incomplete fields</string>
+    <string name="direction_not_saved">Route not saved</string>
+    <string name="direction_saved">Route saved</string>
+    <string name="direction_deleted">Route deleted</string>
+    <string name="direction_not_deleted">Route not deleted</string>
+    <string name="previous_btn">Previous</string>
+    <string name="next_btn">Next</string>
+    <string name="label_from">From :</string>
+    <string name="label_to">To :</string>
+    <string name="label_date">Date :</string>
+    <string name="label_is_departure">Date is the departure :</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="journey_walk">Walk (%1$d meters)</string>
+    <string name="journey_transport">%1$s %2$s\nDestination: %3$s</string>
+    <string name="journey_duration">%1$d min</string>
+    <string name="platform_name">Platform %1$s</string>
+
+    <string name="you_will_receive_ticket_expires_notif">You will receive a notification %1$d minutes before the end of validity for yout ticket.</string>
+    <string name="direction_names">%1$s --> %2$s></string>
+    <string name="showcase_click_to_add_direction">Click here to add a direction</string>
+    <string name="showcase_click_to_save_direction">Click here to save this direction.</string>
+    <string name="showcase_click_to_search_direction">Click here to search this direction.</string>
+    <string name="alarm">Alarm</string>
+    <string name="showcase_alarms">When there are an icon with a \"+\", it\'s possible to create an alarm on this departure.</string>
+    <string name="showcase_click_to_filter_next_departures">Click here to filter the departures according to the line and its destination.</string>
+    <string name="showcase_click_to_favorite_this_stop">Click here to add/remove this stop from favorites. Long click to favorite with filters</string>
+    <string name="showcase_click_to_share">Click here to share these informations with text, with a screen capture or with a url compatible with TPG.</string>
+    <string name="showcase_click_to_see_more_connections">Click on \"...\" to see more connections.</string>
+    <string name="showcase_more_connections">More connections.</string>
+    <string name="showcase_offline_departures">To access this feature, you must save the day departures a line at a specific stop. For that, just click on the floppy in the menu bar on the page departures day.</string>
+    <string name="showcase_delete_offline_departures">To delete a departure offline, you just have to stay lean on each line you want to delete and press the trash icon.</string>
+    <string name="showcase_delete_favorite_stop">To delete a favorite stop, you must either click on the star or click on the line in question and sweep to the right or left.</string>
+    <string name="order">To order</string>
+    <string name="showcase_order_favorite_stop">To change the order of the favorite stops, you have to stay on the line to support your choice and drag to the new position.</string>
+    <string name="showcase_click_to_prepare_ticket">Click here to prepare your SMS ticket.</string>
+    <string name="showcase_departure_alarms">To use this feature, you must add alarms either on the page next departure or on departure day.</string>
+    <string name="alarm_dep_info">Departure\'s information</string>
+    <string name="showcase_alarm_dep_info">Indicates the scheduled departure time and the actual if there was a change.</string>
+    <string name="showcase_alarm_view">Click here to see where is the bus in live.</string>
+    <string name="showcase_click_to_day_departures">Click here to view the departures of the day.</string>
+    <string name="showcase_stop_number">Indicates the number of stops from the start.</string>
+    <string name="stop_number">Number of stops</string>
+    <string name="showcase_click_to_save_day_departures">Click here to save the day departures to access it without an internet connection.</string>
+    <string name="showcase_click_to_alarm">Click here to add / remove an alarm.</string>
+    <string name="action_map_type">Change map type</string>
+    <string-array name="array_map_types">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+        <item>Hybrid</item>
+    </string-array>
+    <string name="app_name">My TPG</string>
+    <string name="app_version" translatable="false">1.1.0</string>
+    <string name="map_type">Map type</string>
+    <string name="showcase_click_to_change_map_type">Click here to change the map type.</string>
+    <string name="notification">Notification</string>
+    <string name="pref_notification_ticket_sms">Notification when SMS tickets expire</string>
+    <string name="pref_time_before_ticket_sms_notification">Time before to notify</string>
+
+    <string-array name="pref_time_before_ticket_sms_notification">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <string name="pref_time_before_alarm_notification">Time before to notify</string>
+
+    <string-array name="pref_time_before_alarm_notification">
+        <item>Always ask</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <string name="pref_language">Language</string>
+
+    <string-array name="pref_languages" translatable="false">
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="pref_languages_values" translatable="false">
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="pref_time_before_alarm_notification_values" translatable="false">
+        <item>-1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="pref_time_before_ticket_sms_notification_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="no_favorite_stops">No favorite stops</string>
+    <string name="menu_next_departures">Next departures</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="action_connections">Connections</string>
+    <string name="widget_favorites_stops">My TPG - Favorites stops</string>
+    <string name="menu_busted" translatable="false">Busted App</string>
+    <string name="getting_busted_stops_data_online" >Getting Busted App stops\' data from online</string>
+    <string name="busted_stops_saving_offline" >Busted App stops are saving for offline mode</string>
+    <string name="at_the_stop">At the stop</string>
+    <string name="action_signal">Signal</string>
+</resources>

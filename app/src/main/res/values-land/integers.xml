@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="columns_lines">10</integer>
+    <integer name="columns_lines_small">6</integer>
+    <integer name="max_connections">16</integer>
+    <integer name="max_connections_thermometer">14</integer>
+</resources>

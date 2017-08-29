@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateTV"
+                android:layout_alignParentRight="true"
+                android:textStyle="normal|italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:text="line"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/lineTV"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:addStatesFromChildren="true"
+                android:layout_alignParentRight="false"
+                android:layout_toRightOf="@+id/lineTV"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:text="place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/placeTV"
+                    android:layout_weight="1"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/natureTV"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stopNameTV"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:text="consequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/consequenceTV" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

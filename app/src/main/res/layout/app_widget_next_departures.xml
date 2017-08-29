@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/titleRelLay">
+
+            <TextView
+                android:text="@string/menu_next_departures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="false"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/mainLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin"
+            android:layout_below="@+id/titleRelLay" />
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/no_favorite_stops"
+            android:textSize="20sp"
+            android:layout_below="@+id/titleRelLay" />
+    </RelativeLayout>
+
+</FrameLayout>

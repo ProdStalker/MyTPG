@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainLinLay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_gps"
+                android:id="@+id/fromGPSIV"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/fromACTV"
+                android:inputType="text"
+                android:layout_toRightOf="@+id/fromGPSIV"
+                android:layout_centerVertical="true"
+                android:hint="@string/from"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_gps"
+                android:id="@+id/toGPSIV"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/toACTV"
+                android:inputType="text"
+                android:layout_toRightOf="@+id/toGPSIV"
+                android:layout_centerVertical="true"
+                android:hint="@string/to"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_refresh"
+                android:id="@+id/refreshIV"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:ems="10"
+                android:id="@+id/dateTimeET"
+                android:layout_toRightOf="@id/refreshIV"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_action_day_departures"
+                android:id="@+id/fakeIV"
+                android:layout_marginLeft="16dp"
+                android:visibility="invisible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="false"
+                android:id="@+id/depArrRG"
+                android:layout_centerVertical="false"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/fakeIV">
+
+                <RadioButton
+                    android:text="@string/departure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/depRB"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_marginLeft="8dp" />
+
+                <RadioButton
+                    android:text="@string/arrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/arrRB"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider"
+            android:layout_marginTop="8dp"
+            android:id="@+id/dividerV">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:id="@+id/researchIV"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_save"
+                android:id="@+id/saveIV"
+                android:padding="8dp"
+                android:layout_toRightOf="@+id/researchIV" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_delete"
+                android:id="@+id/deleteIV"
+                android:padding="8dp"
+                android:layout_toRightOf="@+id/saveIV" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

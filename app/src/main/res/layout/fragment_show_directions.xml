@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLinLay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infosLinLay"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/label_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromLabelTV"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromTV"
+                android:paddingLeft="8dp"
+                android:layout_toRightOf="@+id/fromLabelTV" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/label_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toLabelTV"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toTV"
+                android:paddingLeft="8dp"
+                android:layout_toRightOf="@+id/toLabelTV" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/label_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateLabelTV"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateTV"
+                android:paddingLeft="8dp"
+                android:layout_toRightOf="@+id/dateLabelTV" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isDepartureTV"
+                android:paddingLeft="8dp"
+                android:layout_toRightOf="@+id/dateTV" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/divider"
+        android:id="@+id/dividerV"
+        android:layout_height="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainRV"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonsLinLay"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buttonsLinLay">
+
+            <Button
+                android:text="@string/previous_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/previousBtn"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+            <Button
+                android:text="@string/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/nextBtn"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

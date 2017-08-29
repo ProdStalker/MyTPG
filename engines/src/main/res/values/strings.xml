@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My TPG</string>
+    <string name="error_empty_mnemo">MNEMO is empty</string>
+    <string name="error_bad_parameters">Bad parameters</string>
+    <string name="next">Next</string>
+</resources>

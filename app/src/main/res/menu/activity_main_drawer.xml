@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stops"
+                    android:icon="@drawable/ic_action_stops"
+                    android:title="@string/menu_stops" />
+                <item
+                    android:id="@+id/nav_lines"
+                    android:icon="@drawable/ic_action_bus"
+                    android:title="@string/menu_lines" />
+                <item
+                    android:id="@+id/nav_busted"
+                    android:icon="@drawable/ic_action_busted"
+                    android:title="@string/menu_busted" />
+                <item
+                    android:id="@+id/nav_disruptions"
+                    android:icon="@drawable/ic_action_disruptions"
+                    android:title="@string/menu_disruptions" />
+                <item
+                    android:id="@+id/nav_offline_day_departures"
+                    android:icon="@drawable/ic_action_offline_day_departures"
+                    android:title="@string/menu_offline_day_departures" />
+                <item
+                    android:id="@+id/nav_proximity"
+                    android:icon="@drawable/ic_action_location"
+                    android:title="@string/menu_proximity" />
+                <item
+                    android:id="@+id/nav_favorites_stops"
+                    android:icon="@drawable/ic_action_favorite"
+                    android:title="@string/menu_favorites_stops" />
+                <item
+                    android:id="@+id/nav_directions"
+                    android:icon="@drawable/ic_action_directions"
+                    android:title="@string/menu_directions" />
+                <item
+                    android:id="@+id/nav_departures_alarms"
+                    android:icon="@drawable/ic_action_alarm"
+                    android:title="@string/menu_departures_alarms" />
+                <item
+                    android:id="@+id/nav_tickets"
+                    android:icon="@drawable/ic_action_tickets"
+                    android:title="@string/menu_tickets" />
+                <item
+                    android:id="@+id/nav_map"
+                    android:icon="@drawable/ic_action_map"
+                    android:title="@string/menu_map" />
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_menu_settings"
+                    android:title="@string/action_settings" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/action_share" />
+            </group>
+
+
+</menu>

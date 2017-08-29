@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="14:18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/previewTV"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_right_dark"
+                android:id="@+id/arrowRightHourIV"
+                android:layout_toRightOf="@id/previewTV"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:text="14:18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/departureTV"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/arrowRightHourIV" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:text="line"
+                android:id="@+id/lineTV"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:addStatesFromChildren="true"
+                android:layout_alignParentRight="false"
+                android:layout_toRightOf="@+id/lineTV"
+                android:layout_marginLeft="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Gare Cornavin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stopTV"
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="false" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        app:srcCompat="@drawable/ic_arrow_right_dark"
+                        android:id="@+id/arrowRightIV"
+                        android:layout_toRightOf="@+id/stopTV"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:text="Jardin Botanique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/destinationTV"
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:layout_toRightOf="@+id/arrowRightIV"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="false" />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:text="consequence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/consequenceTV"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_view"
+                android:id="@+id/viewIV"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_delete"
+                android:id="@+id/deleteIV"
+                android:layout_toRightOf="@+id/viewIV"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_warning"
+                android:id="@+id/warningIV"
+                android:layout_toRightOf="@+id/deleteIV"
+                android:padding="8dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

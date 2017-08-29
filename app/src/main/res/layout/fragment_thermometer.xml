@@ -1,0 +1,103 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/mainLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/infosLinLay"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/lineTV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/circle"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/stopTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/lineTV"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/arrowIV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/stopTV"
+                android:contentDescription="@string/none_description"
+                android:src="@drawable/ic_arrow_right_dark" />
+
+            <TextView
+                android:id="@+id/destinationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/arrowIV"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lastUpdatedTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainRV"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_name">
+    <PreferenceCategory
+        android:title="@string/app_name">
+
+        <ListPreference
+            android:key="language"
+            android:title="@string/pref_language"
+            android:entries="@array/pref_languages"
+            android:entryValues="@array/pref_languages_values"
+            android:dialogTitle="@string/pref_language" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/menu_tickets">
+
+        <CheckBoxPreference
+            android:key="isNotificationTicketActive"
+            android:title="@string/notification"
+            android:summary="@string/pref_notification_ticket_sms" />
+
+        <ListPreference
+            android:key="notificationTicketSMSMinutes"
+            android:title="@string/pref_time_before_ticket_sms_notification"
+            android:entries="@array/pref_time_before_ticket_sms_notification"
+            android:entryValues="@array/pref_time_before_ticket_sms_notification_values"
+            android:dialogTitle="@string/pref_time_before_ticket_sms_notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/menu_departures_alarms">
+
+        <ListPreference
+            android:key="notificationAlarmMinutes"
+            android:title="@string/pref_time_before_alarm_notification"
+            android:entries="@array/pref_time_before_alarm_notification"
+            android:entryValues="@array/pref_time_before_alarm_notification_values"
+            android:dialogTitle="@string/pref_time_before_alarm_notification" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
