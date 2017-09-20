@@ -232,6 +232,7 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         Fragment frag = fragmentManager.findFragmentByTag(argFragment.getClass().getName());
+        //sksksk
 
         if (frag != null && argFragment != null && frag.getClass().equals(argFragment.getClass()) && getRealCurrentFragment().getClass().equals(frag.getClass()))
         {
