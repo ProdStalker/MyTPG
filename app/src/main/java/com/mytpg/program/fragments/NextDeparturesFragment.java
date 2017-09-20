@@ -547,6 +547,7 @@ public class NextDeparturesFragment extends BaseFragment implements SwipeRefresh
         {
             getMainActivity().shareLink(getString(R.string.next_departures_stop,mStop.getName()),url);
         }
+
     }
 
     private void shareText(boolean argIsForMessage)

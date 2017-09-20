@@ -193,13 +193,22 @@ public class MainActivity extends AppCompatActivity
     public void shareLink(String argTitle, String argUrl)
     {
         Intent i = new Intent(Intent.ACTION_SEND);
-        i.putExtra(Intent.EXTRA_SUBJECT, argTitle);
-        i.putExtra(Intent.EXTRA_TEXT, Uri.parse(argUrl).toString());
-        i.setType("text/plain");
         try {
-            startActivity(Intent.createChooser(i, getResources().getText(R.string.action_share)));
-        } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, getString(R.string.no_app_available), Toast.LENGTH_SHORT).show();
+
+            i.putExtra(Intent.EXTRA_SUBJECT, argTitle);
+            i.putExtra(Intent.EXTRA_TEXT, Uri.parse(argUrl).toString());
+            i.setType("text/plain");
+
+            try {
+                startActivity(Intent.createChooser(i, getResources().getText(R.string.action_share)));
+            } catch (ActivityNotFoundException e) {
+                Toast.makeText(this, getString(R.string.no_app_available), Toast.LENGTH_SHORT).show();
+            }
+        }
+        catch (Exception e)
+        {
+            Log.d("ERREUR", "Steve erreur");
+            e.printStackTrace();
         }
     }
 
